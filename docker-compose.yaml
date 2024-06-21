@@ -1,0 +1,13 @@
+services:
+  web:
+    image: superrandres/nginx-certbot
+    environment:
+      - TZ='America/Guayaquil'
+    volumes:
+      - ./nginx/letsencrypt/:/etc/letsencrypt
+      - ./nginx/conf:/etc/nginx/conf.d
+      - ./html:/usr/share/nginx/html
+    ports:
+      - 80:80
+      - 443:443
+    restart: always
