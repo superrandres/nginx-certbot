@@ -1,6 +1,7 @@
 services:
   web:
-    image: superrandres/nginx-certbot
+    build:
+      context: web
     environment:
       - TZ='America/Guayaquil'
     volumes:
