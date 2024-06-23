@@ -4,7 +4,7 @@ services:
     environment:
       - TZ='America/Guayaquil'
     volumes:
-      - ./nginx/letsencrypt/:/etc/letsencrypt
+      - ./letsencrypt/:/etc/letsencrypt
       - ./nginx/conf:/etc/nginx/conf.d
       - ./html:/usr/share/nginx/html
     ports:
