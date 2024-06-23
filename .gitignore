@@ -1,4 +1,3 @@
-!**/.gitkeep
-nginx/conf
 nginx/Dockerfile
-letsencrypt
+letsencrypt/*
+!letsencrypt/.gitkeep
